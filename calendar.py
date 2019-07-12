@@ -1,20 +1,25 @@
 from datetime import date
+import calendar
 
 months = ["Janeiro", "Fevereiro", "Marco", "Abril", "Maio", "Junho", "Julho", "Agosto", 
           "Setembro", "Outubro", "Novembro", "Dezembro"]
 
-def GetMMYYYY (tipo):
+def getMonth(tipo):
     
     tipo = tipo.upper()
     
-    if (tipo.upper() == "MM"):
+    if (tipo == "MM"):
+        
         actualMonth = date.today().strftime('%m')
-        print (months [int(actualMonth)])
-    else:
-        print("Errou")
+        return months [int(actualMonth)]
+        
+        
+
+monthText = getMonth("mm");
+year = date.today().strftime('%Y')
 
 
 
-print (type(date.today()))
-GetMMYYYY("mm");
+print (calendar.monthrange(2019, 1)[1])  
+print ( monthText + " " + year)
 
