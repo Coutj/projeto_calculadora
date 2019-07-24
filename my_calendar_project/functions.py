@@ -23,8 +23,8 @@ def printCalendar():
         if ( endOfCalLine <= 6):
             print ("{: >2}".format(index), end=" ")
             print (constants.PRINT_WITHOUT_COLOR + "{: >0}".format(""), end="")
-            endOfCalLine += 1;
+            endOfCalLine += 1
         else:
             print ("{: >2}".format(index))
             print (constants.PRINT_WITHOUT_COLOR + "{: >4}".format("") )
-            endOfCalLine = 1;
+            endOfCalLine = 1
